@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Warm and Cozy</title>
+<link rel="stylesheet" type="text/css" href="styles.css">
+<meta http-equiv='Content-Type' content='text/html; charset=utf-8'>
+</head>
+<script type = "text/javascript">
+var episode = prompt("What episode of 그녀는 예뻤다 do you wish to watch?");
+    for(i=0; i<11; i++){
+        if(episode < 1 || episode > 25 || episode % 1 != 0){
+            var episode = prompt("What are you doing? 1 through 25, please!");
+    }else{
+        break;
+    }
+}
+if(episode < 10){
+    episode = "0" + episode;
+}
+
+var link = "http://www.ondemandkorea.com/she-was-pretty-e" + episode + ".html";
+
+alert("Please silence your cell phones, and enjoy the show.");
+
+window.location.href = link;
+</script>
+</html>

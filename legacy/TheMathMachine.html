@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>The Math HW Machine</title>
+<style>
+center img{
+    max-width:1224px;
+    min-width:90%;
+}
+</style>
+<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<nav>
+    <a href="index.html">Home</a>
+    <a href="ilkwanori.html">IlKwaNori</a>
+    <a href="theabout.html">About not Allison, but Edward</a>
+</nav>
+<img id="thebigideas" src="http://www.campinvention.org/wp-content/uploads/2013/09/home_bigideas.png" width=80%;>
+<script type = "text/javascript">
+var chapter = prompt("What chapter are you on?");
+    for(i=0; i<11; i++){
+        if(chapter < 1 || chapter > 11 || chapter % 1 != 0){
+            var chapter = prompt("What are you doing? 1 through 11, please!");
+    }else{
+        break;
+    }
+}
+var section = prompt("What section are you on? Type cr for chapter review, ct for chapter test, qz for quiz, sa for cumulative assessment, or those regular section numbers 1-8.");
+    for(i=0; i<11; i++){
+        if(section == "cr" || section == "ct" || section == "qz" || section == "sa"){
+            break;
+        }else{
+            if(section < 1 || section > 8 || section % 1 != 0){
+                var section = prompt("Stop messing around! 1 through 8, please! *or cr, ct, qz, or sa");
+    }else{
+        break;
+    }
+}
+}
+if(chapter < 10){
+    chapter = "0" + chapter;
+}
+
+var img = document.getElementById("thebigideas");
+img.style.display = 'none';
+
+if(section == "cr" || section == "ct" || section == "qz" || section == "sa"){ 
+var link = "https://www.bigideasmath.com/protected/content/dcs_cc3/alg1/c" + chapter + "/" + section + "/alg1_" + chapter + "_" + section + "_p001.png";
+var page = 1;
+}else{
+var link = "https://www.bigideasmath.com/protected/content/dcs_cc3/alg1/c" + chapter + "/0" + section + "/alg1_" + chapter + "_0" + section + "_p001.png";
+var page = 1;
+}
+
+if(section == "cr" || section == "ct" || section == "qz" || section == "sa"){ 
+var solutions = "http://static.bigideasmath.com/protected/content/sse/?pref=alg1_ex_" + chapter + "_" + section;
+}else{
+var solutions = "http://static.bigideasmath.com/protected/content/sse/?pref=alg1_ex_" + chapter + "_0" + section;
+}
+document.write("<a href=" + solutions + ">" + solutions + "</a>");
+</script>
+<a href style=float:right;>Do it again!</a>
+<center>
+<button class="daBut" onclick="goBack()">Previous</button>
+<button class="daBut" onclick="goForward()">Next</button>
+</center>
+<br>
+<script type="text/javascript">
+document.write("<div id='thepage'><center><img src=" + link + " alt='Looks like the page you are looking for doesn&apos;t exist! Try again, if you must.'></center></div>");
+</script>
+<script type="text/javascript">
+function goBack(){
+    page--;
+if(section == "cr" || section == "ct" || section == "qz" || section == "sa"){ 
+    link = "https://www.bigideasmath.com/protected/content/dcs_cc3/alg1/c" + chapter + "/" + section + "/alg1_" + chapter + "_" + section + "_p00" + page + ".png";
+    }else{
+        if(page < 10){
+    link = "https://www.bigideasmath.com/protected/content/dcs_cc3/alg1/c" + chapter + "/0" + section + "/alg1_" + chapter + "_0" + section + "_p00" + page + ".png";
+        }
+            else{
+                link = "https://www.bigideasmath.com/protected/content/dcs_cc3/alg1/c" + chapter + "/0" + section + "/alg1_" + chapter + "_0" + section + "_p0" + page + ".png";
+            }
+        }
+    document.getElementById("thepage").innerHTML = "<center><img src=" + link + " alt='Looks like the page you are looking for doesn&apos;t exist! Try again, if you must.'></center>";
+}
+function goForward(){
+    page++;
+if(section == "cr" || section == "ct" || section == "qz" || section == "sa"){ 
+    link = "https://www.bigideasmath.com/protected/content/dcs_cc3/alg1/c" + chapter + "/" + section + "/alg1_" + chapter + "_" + section + "_p00" + page + ".png";
+    }else{
+        if(page < 10){
+    link = "https://www.bigideasmath.com/protected/content/dcs_cc3/alg1/c" + chapter + "/0" + section + "/alg1_" + chapter + "_0" + section + "_p00" + page + ".png";
+        }
+            else{
+                link = "https://www.bigideasmath.com/protected/content/dcs_cc3/alg1/c" + chapter + "/0" + section + "/alg1_" + chapter + "_0" + section + "_p0" + page + ".png";
+            }
+        }
+    document.getElementById("thepage").innerHTML = "<center><img src=" + link + " alt='Looks like the page you are looking for doesn&apos;t exist! Try again, if you must.'></center>";
+}
+</script>
+<body><p>This web site is neither sponsored, endorsed by, affiliated, nor associated with Big Ideas Learning, LLC. Please use this tool with care.</p></body>
+</html>

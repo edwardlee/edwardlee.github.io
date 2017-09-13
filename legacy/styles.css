@@ -1,0 +1,53 @@
+h1{
+    text-align: center;
+    background: rgb(0,196,225);
+    background: rgba(0,196,225,0.5);
+    border: 5px solid blue;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 10px;
+    padding: 10px;
+    box-shadow: 0px 5px 10px gray;
+}
+
+h1 a{
+    text-decoration: none;
+    font-family: 'Book Antiqua',Garamond;
+    color: rgb(49,64,81);
+}
+
+nav{
+    background: #123456;
+    border: 2px solid black;
+    border-radius: 1px;
+    padding: 5px;
+    width: 99%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    padding-right: 20px;
+}
+
+#sagar{
+    background: url(media/allisonedward.jpg) center center fixed;
+    height:100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+}
+#un{
+    background: url(media/un.jpg) center center fixed;
+    height:100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+}
+
+.landscapeprof{width: 26%;}
+.portraitprof{width:15%;}
+
+.daBut{padding: 20px;}
