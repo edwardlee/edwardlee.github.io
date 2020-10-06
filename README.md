@@ -18,7 +18,7 @@ Built a chatbot and performed data analytics for [Lori](https://www.hellolori.co
 ### Social good
 To Edward, coding and the usage of computers has always meant a source of joy and a medium to produce works of personal expression and identity. As long as he was a learner, he was also a teacher to his family, friends, and the public. Prior to entering high school he was involved in Code Phreaks, previously the Chicago Game Design Club, as a mentor and instructor for inner-city kids without the resources at home to experience the space of robotics and game design.
 
-Beginning in 2017, he funneled this drive into BinaryHeart, a student-run NPO repurposing electronics, that otherwise would be discarded, for use by students in need. He now resides on the executive board, managing the [open-source org codebase](https://binaryheart-co.github.io/), and is rumored to be waiting eagerly until operations can resume in-person again.
+Beginning in 2017, he funneled this drive into BinaryHeart, a student-run NPO repurposing electronics, that otherwise would be discarded, for use by students in need. He now resides on the executive board, managing the [open-source org codebase](https://binaryheart-co.github.io/), and is rumored to be waiting eagerly until operations can resume in-person again.<sup>[citation needed]</sup>
 
 ## Other ventures
 - Golf
