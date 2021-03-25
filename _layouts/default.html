@@ -20,9 +20,9 @@
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
   </head>
   <body>
-    <a id="skip-to-content" href="#content">Skip to the content.</a>
 
-    <header class="page-header" role="banner">
+    <header class="page-header" role="banner" style="padding:0rem 0rem 1rem 0rem">
+      <a id="skip-to-content" href="#content" style="float:right; color:#38cab6">Skip to the content.</a><br/>
       <h1 class="project-name">{{ "Edward Lee" | default: site.title | default: site.github.repository_name }}</h1>
       <h2 class="project-tagline">{{ "bright student ⦿ bright future" | default: site.description | default: site.github.project_tagline }}</h2>
       {% if site.github.is_project_page %}
@@ -34,7 +34,7 @@
       {% endif %}
     </header>
 
-    <main id="content" class="main-content" role="main" style="max-width:86em">
+    <main id="content" class="main-content" role="main" style="max-width:85em">
 <table class="infobox biography vcard" style="width: 22em; float: right; margin: 0.5em 0 0.5em 1em;">
 	<tbody style="background-color: #f8f9fa;">
 		<tr>
