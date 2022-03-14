@@ -18,13 +18,124 @@
     <meta name="theme-color" content="#157878">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+    <style>
+.vector-menu-tabs li a {
+    background-position: right bottom;
+    color: #0645ad;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    display: block;
+    float: left;
+    height: 3.07692308em;
+    position: relative;
+    padding-top: 1.25em;
+    padding-left: 8px;
+    padding-right: 8px;
+    font-size: 0.8125em;
+    cursor: pointer;
+}
+.vector-menu-tabs li {
+    background-image: url(https://en.wikipedia.org/w/skins/Vector/resources/common/images/tab-normal-fade.png?1cc52);
+    background-image: linear-gradient(to top,#77c1f6 0,#e8f2f8 1px,#ffffff 100%);
+    background-position: left bottom;
+    background-repeat: repeat-x;
+    float: left;
+    display: block;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    line-height: 1.125em;
+    white-space: nowrap;
+}
+.vector-menu-tabs, .vector-menu-tabs a, #mw-head .vector-menu-dropdown h3 {
+    background-image: url(https://en.wikipedia.org/w/skins/Vector/resources/common/images/tab-separator.png?09d4b);
+    background-image: linear-gradient(to bottom,rgba(167,215,249,0) 0,#a7d7f9 100%);
+    background-repeat: no-repeat;
+    background-size: 1px 100%;
+}
+.vector-menu-tabs {
+    background-position: left bottom;
+    float: left;
+    height: 2.5em;
+    padding-left: 1px;
+}
+.vector-menu-tabs ul {
+    float: left;
+    height: 100%;
+    list-style: none none;
+    margin: 0;
+    padding: 0;
+}
+.vector-menu-tabs .selected {
+    background: white;
+}
+  </style>
   </head>
   <body>
+<div id="mw-head" style="
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+">
 
-    <header class="page-header" role="banner" style="padding:0rem 0rem 1rem 0rem">
-      <a id="skip-to-content" href="#content" style="float:right; color:#38cab6">Skip to the content.</a><br/>
-      <h1 class="project-name">{{ "Edward Lee" | default: site.title | default: site.github.repository_name }}</h1>
-      <h2 class="project-tagline">{{ "bright student ⦿ bright future" | default: site.description | default: site.github.project_tagline }}</h2>
+<div id="left-navigation">
+<nav id="p-namespaces" class="mw-portlet mw-portlet-namespaces vector-menu vector-menu-tabs" aria-labelledby="p-namespaces-label" role="navigation">
+	<ul class="vector-menu-content-list">
+    	<li id="ca-nstab-main" class="selected"><a href="#content" title="View the content page [alt-shift-c]" accesskey="c" style="
+    color: black;
+">Article</a></li>
+        <li id="ca-talk"><a href="https://m.me/leapforwardkr" rel="discussion" title="Discuss improvements to the content page [alt-shift-t]" accesskey="t">Talk</a></li>
+    </ul>		
+</nav>
+</div>
+
+
+<div id="right-navigation" style="
+    float: right;
+">
+<nav id="p-views" class="mw-portlet mw-portlet-views vector-menu vector-menu-tabs" aria-labelledby="p-views-label" role="navigation">
+	<ul class="vector-menu-content-list">
+       	<li id="ca-view" class="selected collapsible"><a style="
+    color: black;
+">Read</a></li>
+        <li id="ca-edit" class="collapsible"><a href="https://github.com/edwardlee" title="Edit this page [alt-shift-e]" accesskey="e">GitHub</a></li>
+        <li id="ca-history" class="collapsible"><a href="https://www.linkedin.com/in/zinu/" title="Past revisions of this page [alt-shift-h]" accesskey="h">LinkedIn</a></li>
+    </ul>	
+</nav>
+			
+    <div id="p-search" role="search" class="vector-search-box" style="
+    float: left;
+">
+	<div style="
+    /* display: block; */
+">
+		
+		<form action="/w/index.php" id="searchform" style="
+    /* margin: 0.5em 0 0; */
+">
+			<div id="simpleSearch" data-search-loc="header-navigation">
+				<input type="search" name="search" placeholder="Search Wikipedia" autocapitalize="sentences" title="Search Wikipedia [alt-shift-f]" accesskey="f" id="searchInput" autocomplete="off" style="
+    width: 96%;
+    height: 34px;
+">
+				<input type="hidden" name="title" value="Special:Search">		
+				<input type="submit" name="go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton" style="
+    position: absolute;
+    background: no-repeat center / 1.23076923em url(https://en.wikipedia.org/w/skins/Vector/resources/common/images/search.svg?bbf78);
+    opacity: 0.67;
+    right: 0.2%;
+    top: 8px;
+    border: none;
+" value="   ">
+			</div>
+		</form>
+	</div>
+	</div>
+</div>
+
+</div>
+    <header class="page-header" role="banner" style="padding:0; background-image:linear-gradient(0deg, #155799, #f3f6fa)">
+      <h1 class="project-name">{{ "Edward Lee" | default: site.title | default: site.github.repository_name }} ({{ "student" | default: site.description | default: site.github.project_tagline }})</h1>
       {% if site.github.is_project_page %}
         <a href="{{ site.github.repository_url }}" class="btn">View on GitHub</a>
       {% endif %}
