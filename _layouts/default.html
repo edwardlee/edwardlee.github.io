@@ -18,29 +18,23 @@
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
     <style>
     .vector-menu-tabs li a {
-        background-position: right bottom;
-        display: block;
-        float: left;
-        height: 3em;
-        padding-top: 1em;
-        padding-left: 8px;
-        padding-right: 8px;
+      background-position: right;
+      display: block;
+      padding: 0.7em;
     }
     .vector-menu-tabs li {
-        background-image: linear-gradient(to top,#77c1f6 0,#e8f2f8 1px,#ffffff 100%);
-        float: left;
-        display: block;
-        line-height: 1.125em;
-        white-space: nowrap;
+      background-image: linear-gradient(to top,#77c1f6 0,#e8f2f8 1px,#fbfaf7 100%);
+      float: left;
+      display: block;
     }
     .vector-menu-tabs a {
-        background-image: linear-gradient(to bottom,rgba(167,215,249,0) 0,#a7d7f9 100%);
-        background-repeat: no-repeat;
-        background-size: 1px 100%;
+      background-image: linear-gradient(to bottom,rgba(167,215,249,0) 0,#a7d7f9 100%);
+      background-repeat: no-repeat;
+      background-size: 1px;
     }
     .vector-menu-tabs ul {
-        margin: 0;
-        padding: 0;
+      margin: 0;
+      padding: 0;
     }
     @media screen and (min-width: 709px) {
       table {
@@ -48,20 +42,26 @@
         float: right;
       }
     }
+    tbody > th {
+      text-align: center;
+    }
+    th, td {
+      background-color: #f8f9fa;
+    }
+    th {
+      color: black;
+      font-size: 13px;
+      font-weight: bold;
+    }
+    h1,h2,h3,h4 {
+      margin:0;
+    }
+    main h1 {
+      padding-top: 0.7em;
+    }
     </style>
   </head>
-  <body>
-    <header class="page-header" role="banner" style="padding:0">
-      <h1 class="project-name">{{ "Edward Lee" | default: site.title | default: site.github.repository_name }} ({{ "student" | default: site.description | default: site.github.project_tagline }})</h1>
-      {% if site.github.is_project_page %}
-        <a href="{{ site.github.repository_url }}" class="btn">View on GitHub</a>
-      {% endif %}
-      {% if site.show_downloads %}
-        <a href="{{ site.github.zip_url }}" class="btn">Download .zip</a>
-        <a href="{{ site.github.tar_url }}" class="btn">Download .tar.gz</a>
-      {% endif %}
-    </header>
-
+  <body style="padding:0">
     <nav class="vector-menu-tabs" role="navigation">
       <ul>
         <li style="background: white">
@@ -78,136 +78,91 @@
         </li>
       </ul>
     </nav>
-
-    <main id="content" class="main-content" role="main" style="max-width:85em">
-      <table>
-        <tbody style="background-color: #f8f9fa;">
+    <h1>&nbsp;</h1>
+    <main id="content" class="main-content" role="main" style="padding: 0 2em 0 2em;">
+      <table style="border-collapse: collapse; margin-left: 1em;">
+        <tbody>
+          <th colspan="2" style="font-size: 15px; padding: 0;">
+            Edward Lee
+          </th>
           <tr>
-            <th style="text-align: center; font-size: 125%; font-weight: bold;" colspan="2">
-              <div class="fn" style="display: inline;">Edward Lee</div>
-            </th>
-          </tr>
-          <tr>
-            <td style="text-align: center;" colspan="2">
-              <a class="image" href="https://github.com/edwardlee/edwardlee.github.io/blob/master/me.jpg">
-                <img src="/me.jpg" alt="me" />
+            <td colspan="2" style="text-align: center;padding: 0;">
+              <a class="image" href="https://github.com/edwardlee/edwardlee.github.io/blob/master/ising.png">
+                <img src="/ising.png" alt="me" style="width: 19em; padding: 0; margin: 0; border: none;">
               </a>
-              <div>
-                Edward holding a <a title="bluegill" href="https://en.wikipedia.org/wiki/Bluegill">bluegill</a> in October 2020
-              </div>
+              <div>Edward in January 2019</div>
             </td>
           </tr>
           <tr>
             <th scope="row">Born</th>
             <td>
-              <div class="nickname" style="display: inline;">Edward Lee</div>
-              <br />
+              <div>Edward Lee</div>
               May 10
-              <br />
-              <div class="birthplace" style="display: inline;">
-                <a title="Illinois" href="https://en.wikipedia.org/wiki/Illinois">Illinois</a>,
-                <a title="United States" href="https://en.wikipedia.org/wiki/United_States">United States</a>
+              <div>
+                <a href="https://en.wikipedia.org/wiki/Illinois">Illinois</a>,
+                <a href="https://en.wikipedia.org/wiki/United_States">United States</a>
               </div>
             </td>
           </tr>
           <tr>
             <th scope="row">Occupation</th>
-            <td class="role">
-              <div class="hlist hlist-separated">
-                <ul>
-                  <li>student</li>
-                  <li>software engineer</li>
-                </ul>
-              </div>
-            </td>
+            <td>Student • software engineer</td>
           </tr>
+          <th colspan="2">
+            Technical career
+          </th>
           <tr>
-            <td style="text-align: center;" colspan="2">
-              <strong>Technical career</strong>
-            </td>
-          </tr>
-          <tr>
-            <th scope="row">Specializations</th>
+            <th scope="row">Areas</th>
             <td>
-              <div class="hlist hlist-separated">
-                <ul>
-                  <li>
-                    <a title="full-stack" href="https://en.wikipedia.org/wiki/Solution_stack">full-stack</a>
-                  </li>
-                  <li>
-                    <a title="edutech" href="https://en.wikipedia.org/wiki/Educational_technology">edutech</a>
-                  </li>
-                </ul>
-              </div>
+              <a href="https://en.wikipedia.org/wiki/Solution_stack">full-stack</a>
+              • <a href="https://en.wikipedia.org/wiki/Educational_technology">edutech</a>
             </td>
           </tr>
           <tr>
-            <th scope="row">Qualifications</th>
+            <th scope="row">Languages</th>
             <td>
-              <div class="hlist hlist-separated">
-                <ul>
-                  <li>
-                    <a title="C" href="https://en.wikipedia.org/wiki/C_(programming_language)">C</a>
-                  </li>
-                  <li>
-                    <a title="Java" href="https://en.wikipedia.org/wiki/Java_(programming_language)">Java</a>
-                  </li>
-                  <li>
-                    <a title="Python" href="https://en.wikipedia.org/wiki/Python_(programming_language)">Python</a>
-                  </li>
-                  <li>
-                    <a title="Javascript" href="https://en.wikipedia.org/wiki/JavaScript">Javascript</a>
-                  </li>
-                </ul>
-              </div>
+              <a href="https://en.wikipedia.org/wiki/C++">C++</a>
+              • <a href="https://en.wikipedia.org/wiki/Java_(programming_language)">Java</a>
+              • <a href="https://en.wikipedia.org/wiki/Python_(programming_language)">Python</a>
+              • <a href="https://en.wikipedia.org/wiki/JavaScript">JavaScript</a>
             </td>
           </tr>
+          <th colspan="2">Korean name</th>
           <tr>
-            <td style="text-align: center;" colspan="2">
-            </td>
-          </tr>
-          <tr>
-            <th style="text-align: center; background-color: #b0c4de;" colspan="2">Korean name</th>
-          </tr>
-          <tr>
-            <th style="font-weight: normal;" scope="row">
-              <a title="Hangul" href="https://en.wikipedia.org/wiki/Hangul">Hangul</a>
+            <th scope="row" style="font-weight: normal;">
+              <a href="https://en.wikipedia.org/wiki/Hangul">Hangul</a>
             </th>
             <td>
-              <div style="display: inline; font-size: 1rem;">
-                <span lang="ko-Hang" title="Korean-language text">
-                  <a class="extiw" title="wikt:이" href="https://en.wiktionary.org/wiki/%EC%9D%B4">이</a>
-                  <a class="extiw" title="wikt:진" href="https://en.wiktionary.org/wiki/%EC%A7%84">진</a>
-                  <a class="extiw" title="wikt:우" href="https://en.wiktionary.org/wiki/%EC%9A%B0">우</a>
-                </span>
-              </div>
+              <span lang="ko-Hang" style="font-size: 1rem;">
+                <a title="wikt:이" href="https://en.wiktionary.org/wiki/%EC%9D%B4">이</a>
+                <a title="wikt:진" href="https://en.wiktionary.org/wiki/%EC%A7%84">진</a>
+                <a title="wikt:우" href="https://en.wiktionary.org/wiki/%EC%9A%B0">우</a>
+              </span>
             </td>
           </tr>
           <tr>
-            <th style="font-weight: normal;" scope="row">
-              <a title="Hanja" href="https://en.wikipedia.org/wiki/Hanja">Hanja</a>
+            <th scope="row" style="font-weight: normal;">
+              <a href="https://en.wikipedia.org/wiki/Hanja">Hanja</a>
             </th>
             <td>
-              <div style="display: inline; font-size: 1rem;">
-                <span lang="ko-Hani" title="Korean-language text">
-                  <a class="extiw" title="wikt:李" href="https://en.wiktionary.org/wiki/%E6%9D%8E">李</a>
-                  <a class="extiw" title="wikt:振" href="https://en.wiktionary.org/wiki/%E6%8C%AF">振</a>
-                  <a class="extiw" title="wikt:宇" href="https://en.wiktionary.org/wiki/%E5%AE%87">宇</a>
-                </span>
-              </div>
+              <span lang="ko-Hani" style="font-size: 1rem;">
+                <a title="wikt:李" href="https://en.wiktionary.org/wiki/%E6%9D%8E">李</a>
+                <a title="wikt:振" href="https://en.wiktionary.org/wiki/%E6%8C%AF">振</a>
+                <a title="wikt:宇" href="https://en.wiktionary.org/wiki/%E5%AE%87">宇</a>
+              </span>
             </td>
           </tr>
           <tr>
-            <th style="font-weight: normal;" scope="row">
-              <a title="Revised Romanization of Korean" href="https://en.wikipedia.org/wiki/Revised_Romanization_of_Korean">Revised Romanization</a>
+            <th scope="row" style="font-weight: normal;">
+              <a href="https://en.wikipedia.org/wiki/Revised_Romanization_of_Korean">Revised Romanization</a>
             </th>
             <td>
               <em lang="ko-Latn" title="Revised Romanization of Korean transliteration">I Jin-u</em>
             </td>
           </tr>
           <tr>
-            <th style="font-weight: normal;" scope="row">
-              <a title="McCune–Reischauer" href="https://en.wikipedia.org/wiki/McCune%E2%80%93Reischauer">McCune–Reischauer</a>
+            <th scope="row" style="font-weight: normal;">
+              <a href="https://en.wikipedia.org/wiki/McCune%E2%80%93Reischauer">McCune–Reischauer</a>
             </th>
             <td>
               <em lang="ko-Latn" title="McCune–Reischauer transliteration">Yi Chin-u</em>
@@ -218,12 +173,6 @@
 
       {{ content }}
 
-      <footer class="site-footer">
-        {% if site.github.is_project_page %}
-          <span class="site-footer-owner"><a href="{{ site.github.repository_url }}">{{ site.github.repository_name }}</a> is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a>.</span>
-        {% endif %}
-        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.</span>
-      </footer>
     </main>
   </body>
 </html>
