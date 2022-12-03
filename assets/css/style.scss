@@ -43,7 +43,7 @@ th {
   font-size: 13px;
   font-weight: bold;
 }
-th:not(tbody th) {
+tr:first-child th {
   font-size: 15px;
 }
 td:only-child, th:only-child {
