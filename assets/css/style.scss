@@ -2,7 +2,7 @@
 ---
 
 @import "{{ site.theme }}";
-ul {
+ul, img, body, h1, h2, h4, td:only-child, th:only-child {
   margin: 0;
   padding: 0;
 }
@@ -23,7 +23,7 @@ nav a {
   background-size: 1px;
   background-position: right;
   display: block;
-  padding: 0.7em;
+  padding: 0.53em;
 }
 @media screen and (min-width: 709px) {
   table {
@@ -47,23 +47,14 @@ tr:first-child th {
   font-size: 15px;
 }
 td:only-child, th:only-child {
-  padding: 0;
   text-align: center;
 }
 img {
   width: 19em;
-  padding: 0;
-  margin: 0;
   border: none;
 }
 span {
   font-size: 1rem;
-}
-body {
-  padding: 0;
-}
-h1, h2, h4 {
-  margin: 0;
 }
 main {
   padding: 0 2em 0 2em;
