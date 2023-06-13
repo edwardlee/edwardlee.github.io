@@ -1,5 +1,5 @@
 # Edward Lee
-**Edward Lee** (born May 10), sometimes known professionally as just Ed, is an American fourth-year student at Northwestern University. He is actively looking for a full time job, particularly those where writing code is involved.
+**Edward Lee** (born May 10), sometimes known professionally as just Ed, is an American graduate from Northwestern University. He is actively looking for a full time job, particularly those where writing code is involved.
 
 ## Early life
 Edward was born in the American state of Illinois. As a child, Edward was interested in firefighters and dumplings and was influenced to become a software engineer after receiving praise for [his rendition](https://scratch.mit.edu/projects/2312360) of Finnish developer Rovio's "Angry Birds" during 5th grade. Edward applied and was hired by HYLA Mobile as a high school junior in Chicago in 2018.
